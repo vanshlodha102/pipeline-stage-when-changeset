@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
 		
 			when{
-				 changeset pattern: "helloworld.js", comparator: "GLOB", caseSensitive: true
+				 changeset "helloworld.js", comparator: "GLOB", caseSensitive: true
 			}
 		
             steps {                
